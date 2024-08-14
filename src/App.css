@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+  font-family: 'Open Sans', serif;
+  color: #ffffff;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    45deg,
+    rgba(45, 176, 224, 1) 0%,
+    rgba(96, 40, 168, 1) 100%
+  );
+}
+
+.main {
+  height: 55vh;
+  background: #2a6bb1;
+  box-shadow: 0px 2px 80px -20px rgba(0, 0, 0, 0.5);
+  width: 60%;
+  margin: 20px auto;
+}
+
+.info {
+  height: 55vh;
+  background: url('img/polygon.jpg') center center no-repeat;
+  background-blend-mode: multiply;
+  background-color: #484747;
+  border: 2px solid #1f1f1f;
+  border-right: 2px solid #131e29;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.form {
+  height: 55vh;
+  padding-top: 100px;
+  padding-left: 50px;
+  border-top: 2px solid #113a65;
+  border-bottom: 2px solid #113a65;
+  border-right: 2px solid #113a65;
+}
+
+input[type='text'] {
+  background-color: transparent;
+  border: 0;
+  border-bottom: solid 2px #113a65;
+  width: 50%;
+  padding-bottom: 4px;
+  color: #ffffff;
+  font-weight: lighter;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  font-size: 20px;
+  outline: none;
+}
+
+input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+input::-moz-placeholder {
+  color: #ffffff;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #2a6bb1 inset !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+button {
+  border: 2px solid #103a65;
+  border-bottom: 4px solid #103a65;
+  padding: 8px 20px;
+  margin: 0 2px;
+  border-radius: 2px;
+  cursor: pointer;
+  background-color: #235d9c;
+  color: #ffffff;
+  outline: none !important;
+}
+
+button:hover {
+  border-bottom: 2px solid #103a65;
+  position: relative;
+  top: 2px;
+}
+
+button:active {
+  border-bottom: 2px solid transparent;
+  border-color: transparent;
+  position: relative;
+  top: 2px;
+}
+
+.info h2 {
+  font-size: 3em;
+  font-weight: normal;
+}
+
+.info p {
+  font-weight: normal;
+}
+
+.infoWeath {
+  width: 60%;
+  font-size: 20px;
+}
+
+.weather-info span {
+  color: #ffd700;
+}
+
+.error {
+  color: #ffffff;
+  font-weight: normal;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .main {
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 15px;
+  }
+
+  .info {
+    height: auto;
+    padding: 20px;
+    margin-top: 0;
+    border-radius: 15px;
+  }
+
+  .form {
+    padding: 20px;
+    border: none;
+    height: auto;
+    border-radius: 15px;
+  }
+
+  input[type='text'] {
+    width: 100%;
+    font-size: 18px;
+    margin: 0 0 10px 0;
+  }
+
+  button {
+    padding: 12px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  .info h2 {
+    font-size: 2.5em;
+  }
+
+  .infoWeath {
+    width: 100%;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .main {
+    width: 70%;
+  }
+
+  input[type='text'] {
+    width: 60%;
+  }
+
+  .info h2 {
+    font-size: 2.8em;
+  }
+
+  .infoWeath {
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .main {
+    width: 50%;
+  }
+
+  input[type='text'] {
+    width: 50%;
+  }
+
+  .info h2 {
+    font-size: 3em;
+  }
+
+  .infoWeath {
+    font-size: 20px;
+  }
+}
